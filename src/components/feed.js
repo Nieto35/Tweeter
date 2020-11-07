@@ -2,38 +2,47 @@ import React from "react";
 import Tweet from "./tweet/tweet";
 import {feed} from '../source';
 
+import {
+    ChatSolid,
+    ShareOutline,
+    HeartOutline,
+} from "@graywolfai/react-heroicons";
+
+
 class Feed extends React.Component {
     constructor() {
         super();
         this.state = {
-            tweets: feed
+            tweets: feed,
+
+            iconCommet: < ChatSolid />,
+            iconRetweet: < ShareOutline />, 
+            iconLike: < HeartOutline /> 
+
         }
     }
 
     render() {
-
-        const {profile, profileName, username, content, display} = {
-            profile: "",
-            profileName: "",
-            username: "",
-            content: "",
-            display: ""
-        };
 
         return (
             <div>
                 {
                     this.state.tweets.map( tweet => {
                         return (
-                            <Tweet
+                            <Tweet 
                                 profile={tweet.profile}
-<<<<<<< HEAD
-                                profileUrl={tweet.profileUrl}
-=======
                                 profileUrl={tweet.imgUrl}
->>>>>>> 352349dcccdeb0b1f436ba70f5480eb942620963
                                 username={tweet.username}
-                                content={tweet.content}/>
+                                content={tweet.content}
+                                comments={tweet.interaction.comments}
+                                retweets={tweet.interaction.retweets}
+                                likes={tweet.interaction.likes}
+
+                                iconCommet={this.state.iconCommet}
+                                iconRetweet={this.state.iconRetweet}
+                                iconLike={this.state.iconLike}
+
+                                />
                         )
                     })
                 }

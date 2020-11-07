@@ -5,6 +5,7 @@ const Icon = (props) => {
     return (
         <div className="t-icon">
             {props.source}
+            {props.text}
         </div>
     )
 }

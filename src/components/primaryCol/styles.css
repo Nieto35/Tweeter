@@ -1,12 +1,5 @@
 .t-col-container {
-<<<<<<< HEAD
     overflow-x: hidden;
     overflow-y: auto;
     height: 100vh;
-=======
-    /* width:100px; 
-    height:115px;  */
-    overflow-y: auto;
-    overflow-x: hidden;
->>>>>>> 352349dcccdeb0b1f436ba70f5480eb942620963
 }

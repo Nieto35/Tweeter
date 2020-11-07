@@ -36,3 +36,19 @@
     font-size: 1.3em;
     text-align: left;
 }
+
+.c3 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.t-icon {
+    width: 5%;
+    padding: 0.8em;
+    cursor: pointer;
+    transition: .2s all;
+    border-radius: 50%;
+}
