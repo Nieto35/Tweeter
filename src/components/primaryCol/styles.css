@@ -1,0 +1,6 @@
+.t-col-container {
+    /* width:100px; 
+    height:115px;  */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
