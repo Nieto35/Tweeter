@@ -27,7 +27,11 @@ class Feed extends React.Component {
                         return (
                             <Tweet
                                 profile={tweet.profile}
+<<<<<<< HEAD
                                 profileUrl={tweet.profileUrl}
+=======
+                                profileUrl={tweet.imgUrl}
+>>>>>>> 352349dcccdeb0b1f436ba70f5480eb942620963
                                 username={tweet.username}
                                 content={tweet.content}/>
                         )

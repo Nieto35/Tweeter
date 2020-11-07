@@ -7,7 +7,11 @@ class Tweet extends React.Component{
             <div className="tweet-container">
                 <div className="row">
                     <div className="c1">
+<<<<<<< HEAD
                         <img src={this.props.profileUrl} alt="this.props.profileUrl" />
+=======
+                        <img src={this.props.profileUrl} alt="profile" />
+>>>>>>> 352349dcccdeb0b1f436ba70f5480eb942620963
                     </div>
                     <div className="c2">
                         <h6>{this.props.profile}</h6>
