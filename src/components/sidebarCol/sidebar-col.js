@@ -7,7 +7,7 @@ const SidebarCol = (props) => {
     return (
         <div className="t-sidebar-col">
             <Shearch/>
-            <h1>¿Què està pasando?</h1>
+            <h1>¿Qué está pasando?</h1>
             <CtrTrends/>
         </div>
     )

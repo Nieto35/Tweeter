@@ -34,7 +34,7 @@ class Feed extends React.Component {
                             <Tweet 
                                 profile={tweet.profile}
                                 profileUrl={tweet.imgUrl}
-                                username={tweet.username}
+                                username={"@"+tweet.username}
                                 content={tweet.content}
                                 comments={tweet.interaction.comments}
                                 retweets={tweet.interaction.retweets}

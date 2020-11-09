@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;   
     width: 100%;
-    padding: 0em 1em;
-    margin: 0 auto;
+    /* padding: 0em 1em; */
+    border-bottom: 0.3px solid  #D6E0E1;
 }
 
 .row {
