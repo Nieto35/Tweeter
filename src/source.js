@@ -1,7 +1,7 @@
 const feed = [
   {
     imgUrl:
-      "https://yt3.ggpht.com/a/AATXAJwBmFHQ3KBpC7llqU3SDqG9shuZU0eIdsV5CihXMQ=s900-c-k-c0x00ffffff-no-rj",
+      "https://pbs.twimg.com/profile_images/1199022496521080832/tBx9LPh8_400x400.png",
     profile: "AJ + Español",
     username: "ajplusespanol",
     content: `Laika fue elegida para viajar al espacio sabiendo que no resistiría.
