@@ -4,6 +4,7 @@
     width: 100%;
     /* padding: 0em 1em; */
     border-bottom: 0.3px solid  #D6E0E1;
+    position: relative;
 }
 
 .row {
@@ -67,3 +68,35 @@
 .selected .t-icon {
     color: rgba(29,161,242,1.00);
 }
+
+
+.contextual-menu > svg{
+    width: 25px;
+  }
+  
+  .contextual-dropdown__row{
+    position: absolute;
+    top: 0;
+    left: -1%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0.5em 1em;
+    width: 45%;
+  }
+  
+  .contextual-dropdown__row>svg{
+    width: 10%;
+  }
+  
+  .contextual-dropdown__row:hover {
+    background-color: #d5d5d5;
+  }
+
+  .contextual-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-left: 45%;
+    margin-top: 5%;
+  }

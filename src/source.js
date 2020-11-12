@@ -21,6 +21,7 @@ const feed = [
     },
     verified: false,
     blocked: false,
+    showContextM: false,
   },
   {
     imgUrl:
@@ -36,6 +37,7 @@ const feed = [
     },
     verified: true,
     blocked: false,
+    showContextM: false,
   },
   {
     imgUrl:
@@ -51,6 +53,7 @@ const feed = [
     },
     verified: true,
     blocked: false,
+    showContextM: false,
   },
   {
     imgUrl:
@@ -65,6 +68,7 @@ const feed = [
     },
     verified: true,
     blocked: false,
+    showContextM: false,
   },
   {
     imgUrl:
@@ -80,6 +84,7 @@ const feed = [
     },
     verified: true,
     blocked: false,
+    showContextM: false,
   },
   {
     imgUrl:
@@ -96,6 +101,7 @@ const feed = [
     },
     verified: true,
     blocked: false,
+    showContextM: false,
   },
   {
     imgUrl:
@@ -110,6 +116,7 @@ const feed = [
     },
     verified: true,
     blocked: false,
+    showContextM: false,
   },
   {
     imgUrl: "https://hipertextual.com/files/2017/01/HPTX_ICONO.png",
@@ -123,6 +130,7 @@ const feed = [
     },
     verified: true,
     blocked: false,
+    showContextM: false,
   },
   {
     imgUrl:
@@ -137,6 +145,7 @@ const feed = [
     },
     verified: true,
     blocked: false,
+    showContextM: false,
   },
   {
     imgUrl:
@@ -152,6 +161,7 @@ const feed = [
     },
     verified: true,
     blocked: false,
+    showContextM: false,
   },
   {
     imgUrl:
@@ -166,6 +176,7 @@ const feed = [
     },
     verified: true,
     blocked: false,
+    showContextM: false,
   },
   {
     imgUrl:
@@ -183,7 +194,9 @@ const feed = [
     },
     verified: true,
     blocked: true,
-  },
+
+showContextM: false,  
+},
   {
     imgUrl:
       "https://lh3.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc",
@@ -197,7 +210,9 @@ const feed = [
     },
     verified: true,
     blocked: true,
-  },
+
+showContextM: false,  
+},
 ];
 
 export { feed };

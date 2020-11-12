@@ -1,11 +1,33 @@
 import React from "react";
 import "./styles.css";
 import Icon from "../icon/icon";
+import { DotsVerticalOutline } from "@graywolfai/react-heroicons";
+import ContextMenu from './context-menu';
 
 class Tweet extends React.Component {
   render() {
     return (
       <div className="tweet-container">
+
+        <div className="contextual-container">
+          <div
+            className="contextual-menu"
+            onClick={() => this.props.toggleContextMenuFn(this.props.index)}
+          >
+            <DotsVerticalOutline />
+          </div>
+
+          {this.props.showContextM ? (
+            <ContextMenu
+              removeFn={this.props.removeTweetFn}
+              index={this.props.index}
+            />
+          ) : null}
+        </div>
+
+
+
+
         <div className="row">
           <div className="c1">
             <img src={this.props.profileUrl} alt="profile" />
@@ -16,12 +38,13 @@ class Tweet extends React.Component {
           </div>
           <div className="c3"></div>
         </div>
+
         <div className="row">
           <p className="content">{this.props.content}</p>
         </div>
+
         <div className="c3">
           <div className="c4">
-            
             <Icon source={this.props.iconCommet} text={this.props.comments} />
           </div>
 
@@ -33,7 +56,6 @@ class Tweet extends React.Component {
                 : () => this.props.selectedFnRetweet(this.props.index)
             }
           >
-            
             <Icon source={this.props.iconRetweet} text={this.props.retweets} />
           </div>
 
@@ -45,7 +67,6 @@ class Tweet extends React.Component {
                 : () => this.props.selectedFnLike(this.props.index)
             }
           >
-            
             <Icon source={this.props.iconLike} text={this.props.likes} />
           </div>
         </div>

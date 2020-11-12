@@ -69,6 +69,25 @@ class Feed extends React.Component {
     this.setState({ tweets: tweetsClone });
   };
 
+
+  toggleContextMenu = (index) => {
+    //Clonar la lista de objetos
+    let tweetsClone = JSON.parse(JSON.stringify(this.state.tweets));
+    //Actualizamos el valor de la propiedad selected
+    tweetsClone[index].showContextM = !tweetsClone[index].showContextM;
+    //Actualizamos el estado
+    this.setState({tweets: tweetsClone});
+}
+
+removeTweet = (index) => {
+  //Clonar la lista de objetos
+  let tweetsClone = JSON.parse(JSON.stringify(this.state.tweets));
+  //Eliminamos el elemento del arreglo
+  tweetsClone.splice(index, 1);
+  //Actualizamos el estado
+  this.setState({tweets: tweetsClone});
+}
+
   render() {
     return (
       <div>
@@ -80,9 +99,10 @@ class Feed extends React.Component {
               profileUrl={tweet.imgUrl}
               username={"@" + tweet.username}
               content={tweet.content}
-              comments={tweet.interaction.comments > 1000 ? tweet.interaction.comments / 1000 + "k" : tweet.interaction.comments}
-              retweets={tweet.interaction.retweets.numbers > 1000 ? tweet.interaction.retweets.numbers/1000 + "k" : tweet.interaction.retweets.numbers}
-              likes={tweet.interaction.likes.numbers > 1000 ? tweet.interaction.likes.numbers / 1000 + "k" : tweet.interaction.likes.numbers }
+              comments={tweet.interaction.comments > 1000 ? (tweet.interaction.comments / 1000).toFixed(1) + "k" : tweet.interaction.comments}
+              retweets={tweet.interaction.retweets.numbers > 1000 ? (tweet.interaction.retweets.numbers / 1000).toFixed(1) + "k" : tweet.interaction.retweets.numbers}
+              likes={tweet.interaction.likes.numbers > 1000 ? (tweet.interaction.likes.numbers / 1000 ).toFixed(1)+ "k" : tweet.interaction.likes.numbers }
+              showContextM = {tweet.showContextM}
               key={index}
               iconCommet={this.state.iconCommet}
               iconRetweet={this.state.iconRetweet}
@@ -97,6 +117,9 @@ class Feed extends React.Component {
               desSelectedFnLike={this.desSelectedLike}
               desSelectedFnRetweet={this.desSelectedRetweet}
               index={index}
+
+              toggleContextMenuFn = {this.toggleContextMenu}
+              removeTweetFn = {this.removeTweet}
             />
           );
         })}
