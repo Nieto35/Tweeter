@@ -1,12 +1,12 @@
 import React from 'react';
-import Shearch from '../sheach/shearch'
+import ListUsers from '../users/listUsers'
 import CtrTrends from '../constructorTrends'
 import './styles.css';
 
 const SidebarCol = (props) => {
     return (
         <div className="t-sidebar-col">
-            <Shearch/>
+            <ListUsers/>
             <h1>¿Qué está pasando?</h1>
             <CtrTrends/>
         </div>
