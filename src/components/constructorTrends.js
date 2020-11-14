@@ -17,12 +17,13 @@ class ConstructorTrends extends React.Component {
             <div>
 
                 {
-                    this.state.tendencias.map( tendencia => {
+                    this.state.tendencias.map( (tendencia, index) => {
                         return (
                             <Trend 
                                 type={tendencia.type}
                                 information={tendencia.information}
                                 tweets={tendencia.tweets}
+                                key = {index}
                                 />
                         )
                     })

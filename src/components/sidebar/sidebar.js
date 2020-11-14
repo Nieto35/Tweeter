@@ -10,9 +10,9 @@ const Sidebar = (props) => {
             <Logo/>
             <div className="t-icon-container">
                 {
-                    props.iconList.map( icon => {
+                    props.iconList.map( (icon, index )=> {
                         return (
-                            <Icon source={icon} />
+                            <Icon source={icon} key = {index} />
                         )
                     })
                 }

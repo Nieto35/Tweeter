@@ -33,13 +33,14 @@ class listUsers extends React.Component {
                 .toLowerCase()
                 .includes(this.state.searchUser.toLowerCase())
             )
-            .map((user) => {
+            .map((user, index) => {
               return (
-                  <div className="">
+                  <div className="" key={index}>
                     <img
                       className="profile-avatar"
                       src={user.profileImg}
                       alt="profileImage"
+                      
                     />
                     <h5 className="">{user.profile}</h5>
                     <small>{user.username}</small>

@@ -6,7 +6,7 @@ import './styles.css';
 const SidebarCol = (props) => {
     return (
         <div className="t-sidebar-col">
-            <ListUsers/>
+            <ListUsers key="1"/>
             <h1>¿Qué está pasando?</h1>
             <CtrTrends/>
         </div>
