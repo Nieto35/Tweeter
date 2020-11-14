@@ -1,7 +1,7 @@
 import React from "react";
 import Tweet from "./tweet/tweet";
 import { feed } from "../source";
-
+import PostTweet from "./postTweet/post-tweet"
 import {
   ChatSolid,
   ShareOutline,
@@ -13,12 +13,62 @@ class Feed extends React.Component {
     super();
     this.state = {
       tweets: feed,
-
+      newTweet: "",
       iconCommet: <ChatSolid />,
       iconRetweet: <ShareOutline />,
       iconLike: <HeartOutline />,
     };
   }
+
+  // --------------------------------------------------------------------------------
+
+
+  handleInput = (evento) => {
+    //Capturar lo que está escribiendo el usuario
+    const tweet = evento.target.value;
+    this.setState({ newTweet: tweet });
+  };
+
+  sendTweet = () => {
+    //Copiamos el arreglo de mensajes
+    // const messagesClone = [...this.state.messages];
+    const TweetClone = JSON.parse(JSON.stringify(this.state.tweets));
+
+    const newTweetObj = {
+      imgUrl: this.props.profileUrl,
+      profile: "Grupo",
+      username: "sjj",
+      content: this.state.newTweet,
+      interaction: {
+        comments: 0,
+        retweets: {
+          numbers: 0,
+          selected: false,
+        },
+        likes: {
+          numbers: 0,
+          selected: false,
+        },
+      },
+      verified: false,
+      blocked: false,
+      showContextM: false,
+    };
+    //Agregar un mensaje dentro del estado messages
+    TweetClone.push(newTweetObj); //problema
+    //Actualizar el estado y quitamos el valor del mensaje
+    this.setState({ tweets: TweetClone, newTweet: "" });
+  };
+
+
+
+
+
+
+
+
+  //------------------------------------------------------------------------------------
+
 
   selectedLike = (index) => {
     //Clonar la lista de objetos
@@ -91,7 +141,12 @@ removeTweet = (index) => {
   render() {
     return (
       <div>
-        {console.log(this.state.tweets)}
+          <PostTweet
+          profileUrl={this.props.profileUrl}
+          handleInput={this.handleInput}
+          newTweet={this.state.newTweet}
+          sendTweet = {this.sendTweet}
+          />
         {this.state.tweets.map((tweet, index) => {
           return (
             <Tweet
