@@ -3,7 +3,7 @@ import ListUsers from '../users/listUsers'
 import CtrTrends from '../constructorTrends'
 import './styles.css';
 
-const SidebarCol = (props) => {
+const SidebarCol = () => {
     return (
         <div className="t-sidebar-col">
             <ListUsers key="1"/>
