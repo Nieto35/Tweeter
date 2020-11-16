@@ -35,15 +35,15 @@ class listUsers extends React.Component {
             )
             .map((user, index) => {
               return (
-                  <div className="" key={index}>
+                  <div className="users" key={index}>
                     <img
                       className="profile-avatar"
                       src={user.profileImg}
                       alt="profileImage"
                       
                     />
-                    <h5 className="">{user.profile}</h5>
-                    <small>{user.username}</small>
+                    <h5 className="user-profile">{user.profile}</h5>
+                    <small className="username">{user.username}</small>
                   </div>
         
               );

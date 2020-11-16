@@ -1,5 +1,17 @@
+.users {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 0.3px solid #727374;
+}
+
 .profile-avatar {
-    width: 50px;
+    padding: 1rem;
+    width: 60px;
     display: inline-block;
-    border-radius: 50%;
-  }
+    border-radius: 50%; 
+}
+
+.user-profile {
+   margin: 0%;
+}

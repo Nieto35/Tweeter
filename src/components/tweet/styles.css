@@ -72,9 +72,9 @@
 
 .contextual-menu > svg{
     width: 25px;
-  }
+}
   
-  .contextual-dropdown__row{
+.contextual-dropdown__row{
     position: absolute;
     top: 0;
     left: -1%;
@@ -83,20 +83,20 @@
     justify-content: left;
     padding: 0.5em 1em;
     width: 45%;
-  }
+}
   
-  .contextual-dropdown__row>svg{
+.contextual-dropdown__row>svg{
     width: 10%;
-  }
+}
   
-  .contextual-dropdown__row:hover {
+.contextual-dropdown__row:hover {
     background-color: #d5d5d5;
-  }
+}
 
-  .contextual-container{
+.contextual-container{
     height: 100%;
     width: 100%;
     position: relative;
     margin-left: 45%;
     margin-top: 5%;
-  }
+}
