@@ -4,7 +4,7 @@
     padding: 0em 1em;
     margin: 0 auto;
     /* background-color: #D9D9D9; */
-    border-bottom: 0.2px solid gray;
+    border-bottom: 1px solid black;
 }
 
 .row-trend {
@@ -14,6 +14,7 @@
 
 .c2-trend{
     padding: 0px 15px;
+    color: rgb(101, 119, 134);
 }
 
 .c2-trend>h6{
@@ -25,10 +26,10 @@
 
 .row-trend>.content-trend{
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
     text-align: left;
 }
 
 h3 {
-    color: #8DA6CE;
+    color: rgb(101, 119, 134);
 }

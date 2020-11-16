@@ -7,7 +7,10 @@ class PrimaryCol extends React.Component {
   render() {
     return (
       <div className="t-col-container">
-        <h3>Inicio</h3>
+
+          <h3 className= "fixed-h3">Inicio</h3>
+
+        
         <Feeds profileUrl={this.props.profileUrl}/>
       </div>
     );

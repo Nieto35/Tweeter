@@ -11,9 +11,9 @@ class Trend extends React.Component{
                     </div>
                 </div>
                 <div className="row-trend">
-                    <p className="content-trend">                
+                    <b className="content-trend">                
                         {this.props.information}
-                    </p>
+                    </b>
                 </div>
                 <div className="row-trend">   
                     {this.props.tweets > 1000 ? <h3> {this.props.tweets / 1000 + "k Tweets"} </h3> : <h3> {this.props.tweets} </h3>}

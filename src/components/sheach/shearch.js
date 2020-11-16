@@ -10,7 +10,6 @@ class Shearch extends React.Component{
                         <div className="flexsearch--input-wrapper">
                             <input className="flexsearch--input" type="search" placeholder="Buscar" value= {this.props.searchUserFn} onChange = {this.props.handleSearchFn}/>
                         </div>
-                        <input className="flexsearch--submit" type="submit" value="&#10140;"/>
                     </div>
                 </div>
             </div>

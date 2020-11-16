@@ -1,8 +1,8 @@
 .users {
   display: flex;
-  flex-direction: row;
   align-items: center;
   border-bottom: 0.3px solid #727374;
+  flex-wrap: wrap;
 }
 
 .profile-avatar {
@@ -15,3 +15,8 @@
 .user-profile {
    margin: 0%;
 }
+ .user-profile h5 {
+   margin: 0;
+ }
+
+

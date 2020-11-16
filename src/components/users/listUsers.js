@@ -42,8 +42,10 @@ class listUsers extends React.Component {
                       alt="profileImage"
                       
                     />
-                    <h5 className="user-profile">{user.profile}</h5>
-                    <small className="username">{user.username}</small>
+                    <div className="user-profile">
+                    <h5>{user.profile}</h5>
+                    <small>{user.username}</small>
+                    </div>
                   </div>
         
               );

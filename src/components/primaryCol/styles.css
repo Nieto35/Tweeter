@@ -1,6 +1,5 @@
-.t-col-container {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 100vh;
+.fixed-h3 {
+    position: fixed;
+    top: 0;
 }
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import PrimaryCol from '../primaryCol/primary-col';
 import SidebarCol from '../sidebarCol/sidebar-col';
+import "./styles.css";
+
 const Main = (props) => {
     return (
         <div className="t-main">
