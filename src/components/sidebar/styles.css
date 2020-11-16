@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 .t-sidebar .t-icon, .t-sidebar > .t-logo {
@@ -27,5 +27,3 @@
     position: fixed;
 }
 
-.t-profile-img {
-}
